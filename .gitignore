@@ -1,0 +1,16 @@
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.glo
+*.gls
+*.ilg
+*.ind
+*.lof
+*.log
+*.pdf
+*.swp
+*.toc
+*.tps
+*.rtf
+*~
