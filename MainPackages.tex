@@ -18,6 +18,12 @@
 %  as good as you can expect to be able to get on normal paper.
 \pdfimageresolution=300
 
+% The microtype package improves the spacing between words and letters. 
+% It does a lot more and most people won’t notice the difference. 
+% But still, the resulting document will be easier to read and looks
+% better when microtype is loaded. Load this package after fonts, 
+% if any, as the package behavior is dependent on this font.
+\usepackage{microtype}
 
 % The float package improves LaTeX's handling of floats,
 %  and also adds the option to *force* LaTeX to put the float
@@ -37,6 +43,12 @@
 %  fractions for unit specifications.
 %\usepackage{units}
 
+% The siunitx package greatly simplifies TeXing when writing
+% scientific documents, where units and numbers are a big part 
+% of the writing. This package adds commands like \num for 
+% typesetting numbers in all sorts of ways and \si for units. 
+% See more at: http://www.howtotex.com/packages/beautiful-fractions-and-units-with-the-unit-package/
+\usepackage{siunitx}
 
 % The setspace package lets you use 1.5-sized or double line spacing.
 \usepackage{setspace}
@@ -86,8 +98,8 @@
 %  alongside your text that can be useful for discussing edits 
 %  in drafts.
 % Remove or comment out the command for proper versions.
-%\usepackage[modulo]{lineno}
-% \linenumbers 
+\usepackage[modulo]{lineno}
+ \linenumbers 
 
 
 % Alternatively, you can use the ifdraft package to let you add
@@ -119,6 +131,13 @@
 % e.g. (Saucer et al., 1993) rather than [1]
 % More details are here: http://merkel.zoneo.net/Latex/natbib.php
 %\usepackage{natbib}
+
+\usepackage{cleveref}
+% This package introduces the \cref command. 
+% When using this command to make cross-references,
+% instead of \ref or \eqref, a word is placed in front of the
+% reference according to the type of reference: fig. for figures, eq. for equations. 
+% See more at: http://www.howtotex.com/packages/automatic-clever-references-with-cleveref/
 
 % The bibentry package (along with the \nobibliography* command)
 %  allows putting full reference lines inline.
